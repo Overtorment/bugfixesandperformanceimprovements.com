@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone, Code, Zap, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -70,7 +71,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="pt-2">
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Schedule a Consultation</Button>
+                <Link href="https://calendly.com/overtorment" target="_blank">
+                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
+                    Schedule a Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
 
